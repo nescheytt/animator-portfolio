@@ -11,6 +11,7 @@ interface AnchorBarProps {
   scrollDelay?: number;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const scrollToSection = (event: any, delay: number) => {
   event.preventDefault();
   const href = event.currentTarget.getAttribute('href');
