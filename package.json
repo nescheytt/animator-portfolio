@@ -1,7 +1,9 @@
 {
+  "author": "Nahuel Scheytt",
+  "main": "index.js",
   "name": "animator-portfolio",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.1.0",
   "dependencies": {
     "@ant-design/icons": "5.0.1",
     "@testing-library/jest-dom": "5.14.1",
@@ -26,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.tsx"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,8 @@
     ]
   },
   "devDependencies": {
-    "@types/react-helmet": "6.1.6"
+    "@types/react-helmet": "6.1.6",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0"
   }
 }
