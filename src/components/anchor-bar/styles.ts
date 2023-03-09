@@ -11,24 +11,29 @@ const fadeIn = keyframes`
 
 export const StyledAnchorBar = styled.div<{ direction: string, size: string }>`
   width: 100%;
-  font-size: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: ${fadeIn} 0.3s ease-in-out;
-
-
+  ${({ size }) => size === 'small' && 'font-size: 14px;'}
+  ${({ size }) => size === 'medium' && 'font-size: 24px;'}
+  ${({ size }) => size === 'large' && 'font-size: 32px;'}
+  ${({ direction }) => direction === 'horizontal' && 'flex-direction: row;'}
+  ${({ direction }) => direction === 'vertical' && 'flex-direction: column;'}
 `;
 
-export const StyledAnchorLink = styled.a<{ active: boolean }>`
+export const StyledAnchorLink = styled.a<{ active: boolean; direction: string }>`
   color: #0057ff;
   padding: 10px;
-  margin-right: 30px;
   position: relative;
   display: inline-block;
 
+  ${({ direction }) => direction === 'horizontal' && 'margin-right: 30px;'}
+  ${({ direction }) => direction === 'vertical' && 'margin-bottom: 30px;'}
+
   &:nth-last-child(1) {
-    margin-right: 0px;
+    ${({ direction }) => direction === 'horizontal' && 'margin-right: 0px;'}
+    ${({ direction }) => direction === 'vertical' && 'margin-bottom: 0px;'}
   }
 
   &:hover {

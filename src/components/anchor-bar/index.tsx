@@ -50,6 +50,7 @@ export const AnchorBar = ({ direction, size, links, scrollDelay = 0 }: AnchorBar
           href={link.href}
           onClick={(event) => scrollToSection(event, scrollDelay)}
           active={activeLink === (document.querySelector(link.href)?.id || '')}
+          direction={direction}
         >
           {link.label}
         </StyledAnchorLink>

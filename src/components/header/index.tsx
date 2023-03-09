@@ -70,7 +70,7 @@ export const Header = () => {
 
               {renderScreenMenu && (
                 <Screen isOpen={isOpen}>
-                  <AnchorBar direction="horizontal" size="large" links={links} scrollDelay={1000} />
+                  <AnchorBar direction="vertical" size="large" links={links} scrollDelay={1000} />
                 </Screen>
               )}
             </>
