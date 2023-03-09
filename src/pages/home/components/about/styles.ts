@@ -1,38 +1,38 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Component = styled.div`
   width: 100%;
   max-width: 1200px;
-  padding: 12px;
-
+  height: 100vh;
+  padding: 60px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
   @media (min-width: 768px) {
-    padding: 15px;
+    padding: 120px 15px;
   }
-`
+`;
 
-export const AboutTitle = styled.h2`
-  margin: 150px 0px 50px;
-`
+export const Title = styled.div`
+  font-size: 32px;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+`;
 
-export const AboutDescription = styled.div`
+export const Description = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  margin-bottom: 50px;
 
   @media (min-width: 768px) {
     flex-direction: row;
   }
-`
+`;
 
-export const AboutImage = styled.img`
+export const Image = styled.img`
   width: 100%;
   max-width: 400px;
   margin-bottom: 40px;
@@ -41,12 +41,12 @@ export const AboutImage = styled.img`
     margin-bottom: 0px;
     margin-right: 40px;
   }
-`
+`;
 
 export const Paragraph = styled.p`
-  color: blue;
+  color: #0057ff;
   font-size: 22px;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   margin: 0px;
-`
+`;

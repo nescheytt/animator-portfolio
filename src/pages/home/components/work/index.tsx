@@ -43,5 +43,5 @@ export const Work = () => {
         </Col>
       </Row>
     </Component>
-  )
+  );
 };

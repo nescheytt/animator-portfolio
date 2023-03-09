@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
 
 export const Meta = () => {
   return (
@@ -7,5 +7,5 @@ export const Meta = () => {
       <title>Facundo López - Animator</title>
       <meta name="description" content="Hi! I'm Facundo López. Argentinian animator based in Buenos Aires. I love animation and music everyday, every minute, every second." />
     </Helmet>
-  )
+  );
 };
