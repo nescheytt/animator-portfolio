@@ -1,25 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Row, Col, Grid } from 'antd';
-import { Component, BurgerContainer, Burger, Screen, AnchorScreenNavbar, Sticky } from './styles';
+import { Component, Sticky, BurgerContainer, Burger, Screen } from './styles';
 import { AnchorBar } from '../anchor-bar';
-
-const NavItems = [
-  {
-    key: 'work',
-    href: '#work',
-    title: 'Work',
-  },
-  {
-    key: 'about',
-    href: '#about',
-    title: 'About',
-  },
-  {
-    key: 'contact',
-    href: '#contact',
-    title: 'Contact',
-  }
-];
 
 const links = [
   { label: 'Work', href: '#work' },
@@ -88,7 +70,7 @@ export const Header = () => {
 
               {renderScreenMenu && (
                 <Screen isOpen={isOpen}>
-                  <AnchorScreenNavbar direction="vertical" onClick={handlerOnClickBurger} items={NavItems} />
+                  <AnchorBar direction="horizontal" size="large" links={links} scrollDelay={1000} />
                 </Screen>
               )}
             </>

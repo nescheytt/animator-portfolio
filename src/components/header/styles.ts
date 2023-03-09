@@ -1,4 +1,3 @@
-import { Anchor } from 'antd';
 import styled from 'styled-components';
 
 export const Component = styled.header`
@@ -21,12 +20,6 @@ export const Sticky = styled.div<{ scrolled?: boolean }>`
   `}
 `;
 
-export const AnchorScreenNavbar = styled(Anchor)`
-  a {
-    font-size: 32px;
-  }
-`;
-
 export const BurgerContainer = styled.div`
   height: 90px;
   padding: 15px;
@@ -36,7 +29,7 @@ export const BurgerContainer = styled.div`
 `;
 
 const line1 = `
-  border-top: 5px solid #000;
+  border-top: 5px solid #0057ff;
   border-radius: 10px;
   display: block;
   transition: opacity 0.3s, margin 0.5s, transform 0.5s;
@@ -82,16 +75,16 @@ export const Burger = styled.div<{ isOpen: boolean }>`
 `;
 
 export const Screen = styled.div<{ isOpen: boolean }>`
-  width: 100%;
+  width: calc(100% + 40px);
   height: 100vh;
   background-color: rgba(255, 215, 206, 0.9);
-
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   position: absolute;
+  top: -20px;
+  left: -20px;
   transition: opacity 4s;
   opacity: 0;
 
