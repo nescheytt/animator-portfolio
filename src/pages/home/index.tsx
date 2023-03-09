@@ -48,5 +48,5 @@ export const Home = () => {
         </Content>
       </>
     </LayoutPage>
-  )
+  );
 };
