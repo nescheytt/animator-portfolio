@@ -1,5 +1,5 @@
-import { Row, Col } from "antd"
-import { Container } from './styles'
+import { Row, Col } from 'antd';
+import { Paragraph } from './styles';
 
 
 export const Footer = () => {
@@ -7,9 +7,9 @@ export const Footer = () => {
     <footer>
       <Row>
         <Col span={24}>
-          <Container>All rights reserved 2023 ©️ Facundo López Animator</Container>
+          <Paragraph>All rights reserved 2023 ©️ Facundo López Animator</Paragraph>
         </Col>
       </Row>
     </footer>
-  )
-}
+  );
+};

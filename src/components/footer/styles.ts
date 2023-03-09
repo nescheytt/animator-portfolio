@@ -1,10 +1,9 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Paragraph = styled.div`
   height: 120px;
-  background-color: #0057FF;
+  background-color: #0057ff;
   padding: 12px;
-  
   color: white;
   font-size: 14px;
   line-height: 22px;
@@ -12,7 +11,6 @@ export const Container = styled.div`
   text-transform: uppercase;
   letter-spacing: 4px;
   text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,4 +18,4 @@ export const Container = styled.div`
   @media (min-width: 768px) {
     padding: 15px;
   }
-`
+`;
