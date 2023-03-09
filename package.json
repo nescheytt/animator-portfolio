@@ -1,6 +1,6 @@
 {
   "author": "Nahuel Scheytt",
-  "main": "index.js",
+  "main": "index.tsx",
   "name": "animator-portfolio",
   "private": true,
   "version": "0.1.0",
