@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Row, Col } from 'antd';
+import { Grid, Row, Col } from 'antd';
 
 // styles
 import { Component, WrapperImage, Hovered, Image, Title, LinkWork } from './styles';
@@ -63,6 +63,9 @@ const listWorks = [
 export const Work = () => {
   const [selectedItem, setSelectedItem] = useState<number | null>(null);
 
+  const { useBreakpoint } = Grid;
+  const { md } = useBreakpoint();
+
   const handleOnClick = (index: number) => {
     setSelectedItem(index);
   };
@@ -76,7 +79,7 @@ export const Work = () => {
       <Row>
         {listWorks.map((work, index) => {
           return (
-            <Col key={work.alt + 1} span={work.col}>
+            <Col key={work.alt + 1} span={md ? work.col : 24}>
               <WrapperImage onClick={() => handleOnClick(index)} onMouseLeave={handleLeave}>
                 <Hovered hovered={selectedItem === index}>
                   <Title>{work.title}</Title>

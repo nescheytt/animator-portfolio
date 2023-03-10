@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Component = styled.div`
   width: 100%;
   max-width: 1200px;
-  height: 100vh;
   padding: 60px 12px;
   display: flex;
   justify-content: center;
@@ -12,6 +11,7 @@ export const Component = styled.div`
 
   @media (min-width: 768px) {
     padding: 120px 15px;
+    height: 100vh;
   }
 `;
 
